@@ -71,3 +71,103 @@ in this we will see all the properties related to `flex container`
 7. `align-content`: this is similar to `justify-content` the only difference is that it will do it along the `cross axis` instead of `main axis`. also `align-content` works only if we have multiple rows
 
 ## lecture 4 Flex display
+
+1. create an html file `index.html`
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="flex-item item-1">Item 1</div>
+    <div class="flex-item item-2">Item 2</div>
+    <div class="flex-item item-3">Item 3</div>
+    <div class="flex-item item-4">Item 4</div>
+    <div class="flex-item item-5">Item 5</div>
+    <div class="flex-item item-6">Item 6</div>
+    <div class="flex-item item-7">Item 7</div>
+    <div class="flex-item item-8">Item 8</div>
+    <div class="flex-item item-9">Item 9</div>
+  </div>
+</body>
+</html>
+```
+
+2. create a `styles.css` file
+
+```
+body{
+  margin: 0;
+}
+.container{
+  border: 6px solid black
+}
+.flex-item{
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+
+}
+.item-1 {
+  background-color: #B4BF35;
+}
+.item-2 {
+  background-color: #B95F21;
+}
+.item-3 {
+  background-color: #1C4C56;
+}
+.item-4 {
+  background-color: #CfB276;
+}
+.item-5 {
+  background-color: #6B0803;
+}
+.item-6 {
+  background-color: #1C4C56;
+}
+.item-7 {
+  background-color: #B95F21;
+}
+.item-8 {
+  background-color: #01243A;
+}
+.item-9 {
+  background-color: #AAD041;
+}
+```
+
+The result will be like as under
+
+![initial setup](./pictures/html_and_css_initial.PNG)
+
+now when we apply the `display: flex` property on the `flex container`
+
+```
+.container{
+  border: 6px solid black;
+  display: flex;
+}
+```
+
+The result is like so
+![display flex](./pictures/display_flex.PNG)
+
+so if we see the `flex container` is taking the full block width and all the child items will take some space.
+
+if we want the `flex container` not to take the block space only the `inline` space than we have to to specify as `display: flex-inline` and the result is as under.
+
+![inline flex](./pictures/inline_flex.PNG)
+
+so to sum up `display` either creates either a block level or inline level flex container.
+
+1. `display: flex`
+2. `display: inline-flex`
