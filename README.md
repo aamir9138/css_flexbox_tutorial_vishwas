@@ -277,3 +277,14 @@ To see the changes first we give a `height:700px` to the `flex container`
 `align-content: space-evenly` -- it will place the items with equal spaces between them and same spaces at the start and at the end on `cross axis`..
 
 on short it aligns lines of content along the cross axis and distribute any extra spacing in the parent container.
+
+## lecture 11 Flex item properties
+
+until now we were working on the `flex container` properties. now we will discuss the `flex item` properties. These are
+
+1. order
+2. flex-grow
+3. flex-shrink
+4. flex-basis
+5. flex --- shorthand for (flex-grow, flex-shrink, flex-basis)
+6. align-self
