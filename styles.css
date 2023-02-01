@@ -16,8 +16,14 @@ body{
   flex-wrap: wrap; */
   /* height: 200px;
   flex-flow: wrap column; */
+  /* justify-content: center; */
+  height: 700px;
+  /* align-items: stretch; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  align-items: baseline;
 
-  justify-content: center;
 }
 .flex-item{
   color: white;
@@ -28,12 +34,15 @@ body{
 }
 .item-1 {
   background-color: #B4BF35;
+  padding: 3rem;
 }
 .item-2 {
   background-color: #B95F21;
+  font-size: 5rem;
 }
 .item-3 {
   background-color: #1C4C56;
+  padding-bottom: 7rem;
 }
 .item-4 {
   background-color: #CfB276;

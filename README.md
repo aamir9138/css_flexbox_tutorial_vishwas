@@ -235,7 +235,7 @@ To see the `justify-content` property more clearly we will reduce the number of 
 
 by default the `justify-content` take the value of `flex-start` which places the `flex-items` at the begining of the `main axis` which is also know as `main start` so like this.
 
-`justify-content: flex-start`
+`justify-content: flex-start` -- default
 `justify-content: flex-end` -- it will place the items at the end of the `main axis`
 `justify-content: center` -- it will place the items at the center of the `main axis`
 `justify-content: space-between` -- it will place the items with equal spaces between them on the `main axis`
@@ -243,3 +243,22 @@ by default the `justify-content` take the value of `flex-start` which places the
 `justify-content: space-evenly` -- it will place the items with equal spaces between them and same spaces at the start and at the end.
 
 `justify-content` works with the `main axis`. so if we change the `flex-direction` to `column` than all the above properties for alignment will work vertically. because now the `main axis` is vertical.
+
+in short `justify-content` align items and distribute any extra spacing in the parent container.
+
+## lecture 9 Align items
+
+The next alignment property is `align-items`. `align-items` work with the `cross axis`. which means to say that `align-items` works similar as `justify-content` but along the `cross axis`.
+
+To see the changes first we give a `height:700px` to the `flex container`
+
+`align-item: stretch` is the default it will stretch the items vertically across the `cross axis` till the end of the `flex container`
+`align-item: flex-end` -- it will place the items at the end of the `cross axis`
+`align-item: flex-start` -- it will place the items at the start of the `cross axis`
+`align-item: center` -- it will place the items at the center of the `cross axis`
+
+`align-item: baseline` -- it will place the items at the baseline (example alphabets). for this we will change some of the `flex items` content to see the baseline
+
+![baseline](./pictures/baseline.PNG)
+
+![baseline align items](./pictures/align-item-baseline.PNG)
