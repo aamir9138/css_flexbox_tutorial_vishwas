@@ -299,3 +299,17 @@ by default every item has `order` zero. but if we want any item to go the last w
 for example to give an order of 1 to item 3 and order of 5 item 7. so item 7 will be the last and item 3 will be the second to last.
 
 1[order](./pictures/order.PNG)
+
+## lecture 13 Flex grow
+
+Dictates what amount of the available space inside the flex container the item should take up.
+Relative to the other items in the container.
+Default value is 0 - items do not grow.
+`flex-grow: 1` - flex items grow evenly.
+
+if `flex-grow: 1` is applied to all the flex item in a container. all the item will divide the extra white space
+if one item is `flex-grow: 1` and the second is `flex-grow: 3`. it means the second item will be 3 times bigger than the first one.
+don't give a negative value to `flex-grow`
+decimal values can also be accepted
+
+![flex grow](./pictures/flex-grow.PNG)

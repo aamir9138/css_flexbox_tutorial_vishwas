@@ -89,13 +89,16 @@ body{
 }
 .item-5 {
   background-color: #6B0803;
+  flex-grow: 1;
 }
 .item-6 {
   background-color: #1C4C56;
+  flex-grow: 1;
 }
 .item-7 {
   background-color: #B95F21;
-  order: 5
+  order: 5;
+  flex-grow: 3; 
 }
 .item-8 {
   background-color: #01243A;
