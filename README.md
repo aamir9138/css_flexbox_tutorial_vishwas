@@ -262,3 +262,18 @@ To see the changes first we give a `height:700px` to the `flex container`
 ![baseline](./pictures/baseline.PNG)
 
 ![baseline align items](./pictures/align-item-baseline.PNG)
+
+## lecture 10 align content
+
+`align-content` works only when we apply `flex-wrap: wrap`. it means align content work with multiple lines or rows you can say along the `cross axis`
+
+`align-content: stretch` is the default it will stretch the items vertically across the `cross axis` till the end of the `flex container`
+`align-content: flex-end` -- it will place the items at the end of the `cross axis`
+`align-content: flex-start` -- it will place the items at the start of the `cross axis`
+`align-content: center` -- it will place the items at the center of the `cross axis`
+
+`align-content: space-between` -- it will place the items with equal spaces between them on the `cross axis`
+`align-content: space-around` -- it will place the items with equal spaces between them and half of the spaces at the start and at the end on `cross axis`.
+`align-content: space-evenly` -- it will place the items with equal spaces between them and same spaces at the start and at the end on `cross axis`..
+
+on short it aligns lines of content along the cross axis and distribute any extra spacing in the parent container.
