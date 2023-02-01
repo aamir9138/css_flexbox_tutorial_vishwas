@@ -17,7 +17,7 @@ body{
   /* height: 200px;
   flex-flow: wrap column; */
   /* justify-content: center; */
-  height: 700px;
+  /* height: 700px; */
   flex-wrap: wrap;
   /* align-items: stretch; */
   /* align-items: flex-start; */
@@ -31,7 +31,7 @@ body{
   /* align-content: stretch; */
   /* align-content: space-around; */
   /* align-content: space-between; */
-  align-content: space-evenly;
+  /* align-content: space-evenly; */
 
 
 }
@@ -82,6 +82,7 @@ body{
 }
 .item-3 {
   background-color: #1C4C56;
+  order: 1;
 }
 .item-4 {
   background-color: #CfB276;
@@ -94,6 +95,7 @@ body{
 }
 .item-7 {
   background-color: #B95F21;
+  order: 5
 }
 .item-8 {
   background-color: #01243A;

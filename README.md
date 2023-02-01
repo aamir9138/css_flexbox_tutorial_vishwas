@@ -288,3 +288,14 @@ until now we were working on the `flex container` properties. now we will discus
 4. flex-basis
 5. flex --- shorthand for (flex-grow, flex-shrink, flex-basis)
 6. align-self
+
+## lecture 12 Order
+
+`order` control the order of items in the flex container. it takes an integer value.
+
+normally the items will show in the UI according to how it is present in the code. but we can change this order with the `order` property.
+by default every item has `order` zero. but if we want any item to go the last we give a high integer for that item order.
+
+for example to give an order of 1 to item 3 and order of 5 item 7. so item 7 will be the last and item 3 will be the second to last.
+
+1[order](./pictures/order.PNG)
