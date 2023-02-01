@@ -3,7 +3,12 @@ body{
 }
 .container{
   border: 6px solid black;
-  display: inline-flex;
+  /* display: inline-flex; */
+  display: flex;
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  flex-direction: column-reverse;
+  /* flex-direction: row; */
 }
 .flex-item{
   color: white;

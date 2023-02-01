@@ -171,3 +171,12 @@ so to sum up `display` either creates either a block level or inline level flex 
 
 1. `display: flex`
 2. `display: inline-flex`
+
+## lecture 5 flex direction
+
+It sets the direction of the `main axis`. we have 4 major types for it.
+
+1. `flex-direction: row` the default
+2. `flex-direction: row-reverse` main axis change from `left to right` to `right to left`
+3. `flex-direction: column` main axis change to `top to bottom`
+4. `flex-direction: column-reverse` main axis change to `bottom to top`
