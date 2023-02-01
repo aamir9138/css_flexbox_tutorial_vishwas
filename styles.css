@@ -11,9 +11,11 @@ body{
   /* flex-direction: row;
   flex-wrap: row;
   flex-wrap: wrap-reverse; */
-  flex-direction: column;
+  /* flex-direction: column;
   height: 300px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  height: 200px;
+  flex-flow: wrap column;
 }
 .flex-item{
   color: white;

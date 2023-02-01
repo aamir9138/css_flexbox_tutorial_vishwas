@@ -186,7 +186,7 @@ It sets the direction of the `main axis`. we have 4 major types for it.
 `flex-wrap` property is applied on the container. By default all the `flex-items` in a container will try to fit in a single line. if there is not enough space the items simply overflow. flex wrap has different scenarios it also depends on the `flex-direction`.
 
 `flex-wrap` has the following options
-`flex-wrap: nowrap`
+`flex-wrap: nowrap` is the default
 `flex-wrap: wrap`
 `flex-wrap: wrap-reverse`
 
@@ -207,3 +207,21 @@ for this first we have to give a value of `height` to the `flex-container`. so w
 ### no-wrap
 
 if we apply `flex-wrap: no-wrap` the items will not wrap even if we change height and width
+
+## lecture 7 Flex flow
+
+it is a shorthand for `flex-direction` and `flex-wrap`. by default we have
+`flex-direction: row`
+`flex-wrap: nowrap`
+
+`flex-flow: <flex-direction><flex-wrap>`
+
+for `flex-flow` we have to assign 2 values the first position will be for `flex-direction` and second position for `flex-wrap`. for example
+`flex-flow: row-reverse wrap`.
+
+you can give any combination of these 2. for example
+
+```
+  height: 200px;
+  flex-flow: wrap column;
+```
