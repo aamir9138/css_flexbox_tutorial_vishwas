@@ -180,3 +180,30 @@ It sets the direction of the `main axis`. we have 4 major types for it.
 2. `flex-direction: row-reverse` main axis change from `left to right` to `right to left`
 3. `flex-direction: column` main axis change to `top to bottom`
 4. `flex-direction: column-reverse` main axis change to `bottom to top`
+
+## lecture 6 Flex wrap
+
+`flex-wrap` property is applied on the container. By default all the `flex-items` in a container will try to fit in a single line. if there is not enough space the items simply overflow. flex wrap has different scenarios it also depends on the `flex-direction`.
+
+`flex-wrap` has the following options
+`flex-wrap: nowrap`
+`flex-wrap: wrap`
+`flex-wrap: wrap-reverse`
+
+### when flex-direction: row
+
+when `flex-direction: row` and the flex items are not fitting horizantally than.
+
+1. if we apply `flex-wrap: wrap` the flex items wrapp and moved to the second row below
+2. if we apply `flex-wrap: wrap-reverse` the flex items wrapp and moved to the row above
+
+### when flex-direction: column
+
+for this first we have to give a value of `height` to the `flex-container`. so when the height decreases the number of columns increases due to wrapping
+
+1. if we apply `flex-wrap: wrap` the flex items wrapp and moved to the right column
+2. if we apply `flex-wrap: wrap-reverse` the flex items wrapp and moved to the left column
+
+### no-wrap
+
+if we apply `flex-wrap: no-wrap` the items will not wrap even if we change height and width

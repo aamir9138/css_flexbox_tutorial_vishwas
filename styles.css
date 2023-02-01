@@ -7,8 +7,13 @@ body{
   display: flex;
   /* flex-direction: row-reverse; */
   /* flex-direction: column; */
-  flex-direction: column-reverse;
-  /* flex-direction: row; */
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row;
+  flex-wrap: row;
+  flex-wrap: wrap-reverse; */
+  flex-direction: column;
+  height: 300px;
+  flex-wrap: wrap;
 }
 .flex-item{
   color: white;
