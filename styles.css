@@ -14,8 +14,10 @@ body{
   /* flex-direction: column;
   height: 300px;
   flex-wrap: wrap; */
-  height: 200px;
-  flex-flow: wrap column;
+  /* height: 200px;
+  flex-flow: wrap column; */
+
+  justify-content: center;
 }
 .flex-item{
   color: white;

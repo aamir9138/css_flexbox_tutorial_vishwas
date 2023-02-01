@@ -208,7 +208,7 @@ for this first we have to give a value of `height` to the `flex-container`. so w
 
 if we apply `flex-wrap: no-wrap` the items will not wrap even if we change height and width
 
-## lecture 7 Flex flow
+## lecture 7 flex-flow
 
 it is a shorthand for `flex-direction` and `flex-wrap`. by default we have
 `flex-direction: row`
@@ -225,3 +225,21 @@ you can give any combination of these 2. for example
   height: 200px;
   flex-flow: wrap column;
 ```
+
+## lecture 8 Justify content
+
+now take a look of the alignment properties provided by the `flex container`. `justify-content` will be the first alignment property.
+To see the `justify-content` property more clearly we will reduce the number of items to 5.
+
+- `justify-content` defines the alignment along the main axis.
+
+by default the `justify-content` take the value of `flex-start` which places the `flex-items` at the begining of the `main axis` which is also know as `main start` so like this.
+
+`justify-content: flex-start`
+`justify-content: flex-end` -- it will place the items at the end of the `main axis`
+`justify-content: center` -- it will place the items at the center of the `main axis`
+`justify-content: space-between` -- it will place the items with equal spaces between them on the `main axis`
+`justify-content: space-around` -- it will place the items with equal spaces between them and half of the spaces at the start and at the end.
+`justify-content: space-evenly` -- it will place the items with equal spaces between them and same spaces at the start and at the end.
+
+`justify-content` works with the `main axis`. so if we change the `flex-direction` to `column` than all the above properties for alignment will work vertically. because now the `main axis` is vertical.
