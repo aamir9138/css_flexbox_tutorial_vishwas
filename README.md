@@ -326,3 +326,15 @@ if we give an item `flex-shrink: 4` it will shrink 4 times more than the other i
 shrinking behaviour. we applied here a width of `8rem`. the results are
 
 ![flex shrink](./pictures/flex_shrink.PNG)
+
+## lecture 15 Flex basis
+
+As we use a `width` property in the previous lecture to demonstrate shrink. don't use that instead use `flex-basis`.
+
+flex-basis set the initial size of a flex item.
+we can use pixels,percentage or relative units.
+default value of flex-basis is `auto`. `flex-basis: auto`
+
+it means if a flex item has more content it will take more width of space you can say by default.
+
+also if we apply some pixels to `flex-basis` the `flex-grow` and `flex-shrink` will work on that number of pixels than as a basis.
