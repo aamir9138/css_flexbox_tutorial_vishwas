@@ -347,7 +347,7 @@ also if we apply some pixels to `flex-basis` the `flex-grow` and `flex-shrink` w
 
 ![flex values on item](./pictures/flex_values_on_item.PNG)
 
-## lecture align self
+## lecture 17 align self
 
 `align-self` property is used to control the alignment of individual flex item. it is pretty much the same as `align-item` property on the `flex-container`.
 To help with the demo increase the height of the container to 400px. so you see that the item stretch from `cross start` to `cross end`.
@@ -372,3 +372,10 @@ so in short
 - align-self align the items individually
 - accepts values like auto, flex-start, flex-end, center and stretch
 - overrides the align-items value of the flex container.
+
+## lecture 18 Use cases
+
+- Navbar
+- Centering item
+- unequal height columns and card footers
+- Holy Grail layout
