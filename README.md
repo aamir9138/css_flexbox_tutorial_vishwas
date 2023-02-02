@@ -338,3 +338,11 @@ default value of flex-basis is `auto`. `flex-basis: auto`
 it means if a flex item has more content it will take more width of space you can say by default.
 
 also if we apply some pixels to `flex-basis` the `flex-grow` and `flex-shrink` will work on that number of pixels than as a basis.
+
+## lecture 16 flex
+
+`flex` property is applied to `flex items`
+
+![flex on item](./pictures/flex_on_item.PNG)
+
+![flex values on item](./pictures/flex_values_on_item.PNG)

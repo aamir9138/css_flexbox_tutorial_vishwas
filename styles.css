@@ -121,12 +121,13 @@ body{
   font-size: 1.5rem;
   padding: 1rem;
   text-align: center;
-  width: 8rem;
+  /* width: 8rem; */
   /* flex-shrink: 0; */
 }
 
 .item-1 {
   background-color: #B4BF35;
+  flex-basis: 15rem;
 }
 .item-2 {
   background-color: #B95F21;
