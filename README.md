@@ -346,3 +346,29 @@ also if we apply some pixels to `flex-basis` the `flex-grow` and `flex-shrink` w
 ![flex on item](./pictures/flex_on_item.PNG)
 
 ![flex values on item](./pictures/flex_values_on_item.PNG)
+
+## lecture align self
+
+`align-self` property is used to control the alignment of individual flex item. it is pretty much the same as `align-item` property on the `flex-container`.
+To help with the demo increase the height of the container to 400px. so you see that the item stretch from `cross start` to `cross end`.
+
+1. The first possible value for the `flex item` is `align-self: flex-start`
+2. second is `align-self: flex-end`
+3. `align-self: center`
+
+![align self start center end](./pictures/align_self.PNG)
+
+4. The fourth value is `align-self: stretch` now this stretch is from `cross start` to `cross end`.
+5. if you see other items all are stretch. you may think `stretch` is the default value. That is not true. the default value for `align-self` is `auto`. which implies that `align-self` property must be computed from the `align-items` property of the parent flex container. items 5 to item 7 are stretched because the parent flex container has a default value of `align-items: stretch`
+
+so if set the flex container with `align-items: flex-start`. The flex-items `align-self` will inherit that from `align-items` of parent.
+
+![inherit align items](./pictures/inherit_align_items.PNG)
+
+Than if `align-self` is specified it will overrides the parent `align-items` value.
+
+so in short
+
+- align-self align the items individually
+- accepts values like auto, flex-start, flex-end, center and stretch
+- overrides the align-items value of the flex container.
