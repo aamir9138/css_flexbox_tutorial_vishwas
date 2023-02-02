@@ -156,12 +156,12 @@ body{
 } */
 
 /* align-self */
-.container{
+/* .container{
   border: 6px solid black;
   display: flex;
-  height: 400px;
+  height: 400px; */
   /* align-items: stretch; // default for flex container */
-  align-items: flex-start;
+  /* align-items: flex-start;
 }
 
 .flex-item{
@@ -188,9 +188,9 @@ body{
   align-items: stretch;
 }
 .item-5 {
-  background-color: #6B0803;
+  background-color: #6B0803; */
   /* align-self: auto; // default for align-self flex items; */
-}
+/* }
 .item-6 {
   background-color: #1C4C56;
 }
@@ -202,4 +202,40 @@ body{
 }
 .item-9 {
   background-color: #AAD041;
+} */
+
+/* lecture 19 Responsive Navbar */
+
+nav {
+  font-size: 2rem;
+  background-color: #f1f1f1;
+  border: 2px solid black;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: space-around; it will not take the whole space so we use flex: auto and text-align: center below*/
+}
+nav ul li {
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 2px solid black;
+  flex: auto;
+  text-align: center;
+}
+nav ul li:hover{
+  background-color: #555;
+  color: white;
+}
+
+@media all and (max-width: 400px){
+  nav ul{
+    flex-direction: column;
+  }
+  nav ul li{
+    text-align: center;
+  }
 }

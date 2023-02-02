@@ -379,3 +379,76 @@ so in short
 - Centering item
 - unequal height columns and card footers
 - Holy Grail layout
+
+## lecture 19 Responsive Navbar
+
+the `index.html` page will look like
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+</body>
+</html>
+```
+
+the `styles.css` is like below
+
+```
+/* lecture 19 Responsive Navbar */
+
+nav {
+  font-size: 2rem;
+  background-color: #f1f1f1;
+  border: 2px solid black;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: space-around; it will not take the whole space so we use flex: auto and text-align: center below*/
+}
+nav ul li {
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 2px solid black;
+  flex: auto;
+  text-align: center;
+}
+nav ul li:hover{
+  background-color: #555;
+  color: white;
+}
+
+@media all and (max-width: 400px){
+  nav ul{
+    flex-direction: column;
+  }
+  nav ul li{
+    text-align: center;
+  }
+}
+```
+
+so in the style if you notice we took `ul` as the `flex container` and the 4 lis as `flex items`. so we can either use `justify-content: space-around` on the `flex-container` in addition to `display:flex`. but the items will not take the full available space.
+
+if we want the `flex-items` to take the full spac available so on items i.e on lis specify `flex: auto` which means `flex: 0 1 auto` by default.
+
+we can also apply media query that if the max width is less than 400px the `flex-direction` must change to `column` for the `flex-container`
