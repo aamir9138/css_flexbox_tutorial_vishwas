@@ -452,3 +452,74 @@ so in the style if you notice we took `ul` as the `flex container` and the 4 lis
 if we want the `flex-items` to take the full spac available so on items i.e on lis specify `flex: auto` which means `flex: 0 1 auto` by default.
 
 we can also apply media query that if the max width is less than 400px the `flex-direction` must change to `column` for the `flex-container`
+
+## lecture 20 Centering an Item in a container
+
+in html we have a container and an item as below.
+
+```
+<!-- lecture 20 centering an item -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="item">
+    Item
+  </div>
+</div>
+</body>
+</html>
+```
+
+in the `styles.css` we have
+
+```
+.container{
+  border: 5px solid black;
+  height: 800px;
+  width: 800px;
+}
+.item{
+  height: 200px;
+  width: 200px;
+  border: 3px solid orange;
+}
+```
+
+![centering item](./pictures/centering_an_item.PNG)
+
+if we want to center the orange item square we add this to the flex-container
+
+```
+display: flex;
+justify-content: center;
+align-items: center;
+```
+
+so it becomes
+
+```
+/* lecture 20 Centering an item */
+.container{
+  border: 5px solid black;
+  height: 800px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  height: 200px;
+  width: 200px;
+  border: 3px solid orange;
+}
+```
+
+![item centered](./pictures/item_centered.PNG)

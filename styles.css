@@ -206,7 +206,7 @@ body{
 
 /* lecture 19 Responsive Navbar */
 
-nav {
+/* nav {
   font-size: 2rem;
   background-color: #f1f1f1;
   border: 2px solid black;
@@ -216,9 +216,9 @@ nav ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: flex; */
   /* justify-content: space-around; it will not take the whole space so we use flex: auto and text-align: center below*/
-}
+/* }
 nav ul li {
   cursor: pointer;
   padding: 0.5rem;
@@ -238,4 +238,19 @@ nav ul li:hover{
   nav ul li{
     text-align: center;
   }
+} */
+
+/* lecture 20 Centering an item */
+.container{
+  border: 5px solid black;
+  height: 800px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  height: 200px;
+  width: 200px;
+  border: 3px solid orange;
 }
