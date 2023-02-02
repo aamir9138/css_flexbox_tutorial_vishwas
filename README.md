@@ -313,3 +313,16 @@ don't give a negative value to `flex-grow`
 decimal values can also be accepted
 
 ![flex grow](./pictures/flex-grow.PNG)
+
+## lecture 14 Flex Shrink
+
+Dictates the shrink factor of the flex items when the default size of flex items is larger than the flex container.
+Relative to the other items in the container.
+Default value is 1.
+
+so every item will shrink with a factor of 1 by default before overflowing. if we give `flex-shrink: 0` the items will not shrink and just overflow straight away.
+
+if we give an item `flex-shrink: 4` it will shrink 4 times more than the other items in a container. we have to give some extra `width` to all the elements to see the
+shrinking behaviour. we applied here a width of `8rem`. the results are
+
+![flex shrink](./pictures/flex_shrink.PNG)
